@@ -1,0 +1,101 @@
+/* signin */
+
+.signin {
+    margin-top: 120px;
+    padding: 100px 0 150px;
+    background-image: url(../images/signin_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.signin .inner {
+
+}
+
+.signin h1 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.signin__card {
+    width: 500px;
+    margin: 0 auto;
+    border-radius: 6px;
+    background-color: #f6f5f0;
+    box-shadow: 2px 2px 20px rgb(0,0,0 /0.3);
+    color: #555;
+}
+/* 해당 선택자는 BEM 표기법으로 이미 signin이라는 요소에 속해 있는  */
+/* card라는 요소임을 나타내므로, 앞의 선택자 signin 을 생략하여도 괜찮다. */
+/* 개인적으로 작성할 땐 알아보기 편한걸로 하자, 일부러 지울 필요는 없을 듯 */
+
+.signin .signin__card h2{
+    padding: 30px;
+    font-size: 18px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.signin .signin__card h2 strong{
+    font-weight: 700;
+    color: #063;
+}
+
+.signin .signin__card form{
+    padding: 30px 22px;
+}
+
+.signin .signin__card form input{
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.signin .signin__card form [type="submit"]{
+    /* 속성 선택자로 form 태그중 type="submit" 이라는 속성과 "값"을 가진 요소를 찾는다. */
+    /* 여기서 속성값을 지우면 해당 속성을 가진 모든 요소를 선택한다. */
+    background-color: #063;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.signin .signin__card form p{
+    font-size: 12px;
+    color: #063;
+    text-align: center;
+}
+
+
+.signin .signin__card .actions{
+    display: flex;
+    border-top: 1px solid #ddd;
+}
+
+.signin .signin__card .actions a{
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    color: #555;
+    font-size: 14px;
+    border-right: 1px solid #ddd;
+}
+
+.signin .signin__card .actions a:last-child{
+    border-right: none;
+}
+
+.signin .signin__card .actions a:hover{
+    text-decoration: underline;
+}
